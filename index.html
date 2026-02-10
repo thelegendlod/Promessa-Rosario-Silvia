@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Condividi i tuoi ricordi - Matrimonio</title>
+
+<!-- Font Dancing Script -->
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
   body {
     margin: 0;
@@ -12,51 +16,76 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* Sfondo locale dalla stessa cartella */
     background: url('promessa.jpg') no-repeat center center;
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
     text-align: center;
   }
+
   h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-family: 'Dancing Script', cursive;
+    font-size: 54px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    letter-spacing: 1px;
   }
+
   button {
-    padding: 20px 40px;
+    padding: 20px 42px;
     font-size: 22px;
-    margin: 10px;
-    border: none;
-    border-radius: 12px;
+    margin: 12px;
+    border-radius: 16px;
     cursor: pointer;
-    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.6);
     font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
   }
+
+  /* Pulsante verde chiaro */
   #upload {
-    background-color: #e91e63;
-    color: #fff;
+    background-color: rgba(144, 238, 144, 0.45);
   }
-  #upload:hover {
-    background-color: #c2185b;
-  }
+
+  /* Pulsante rosa antico chiaro */
   #view {
-    background-color: #3f51b5;
-    color: #fff;
+    background-color: rgba(216, 167, 177, 0.45);
   }
-  #view:hover {
-    background-color: #303f9f;
+
+  button:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  /* Miglioramento su schermi piccoli */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 42px;
+    }
+
+    button {
+      width: 85%;
+      font-size: 20px;
+    }
   }
 </style>
 </head>
+
 <body>
   <h1>Benvenuti al nostro giorno speciale 💍</h1>
-  <button id="upload" onclick="window.open('https://gio.it.tab.digital/s/3WykCbnnp2LC8zr', '_blank')">
+
+  <button id="upload"
+    onclick="window.open('https://gio.it.tab.digital/s/3WykCbnnp2LC8zr', '_blank')">
     Clicca qui per caricare le tue foto e video
   </button>
-  <button id="view" onclick="window.open('https://mega.nz/folder/0PJ0BKhJ#PNI864eLx0MNaH-uw2GqNw', '_blank')">
+
+  <button id="view"
+    onclick="window.open('https://mega.nz/folder/0PJ0BKhJ#PNI864eLx0MNaH-uw2GqNw', '_blank')">
     Vedi i ricordi condivisi dagli altri
   </button>
 </body>
