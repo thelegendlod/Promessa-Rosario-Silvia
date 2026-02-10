@@ -14,12 +14,13 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-start;
+    padding-top: 120px; /* altezza contenuto */
     background: url('promessa.jpg') no-repeat center center;
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff;
+    color: #000;
     text-align: center;
   }
 
@@ -28,43 +29,53 @@
     font-size: 54px;
     font-weight: 600;
     margin-bottom: 40px;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
     letter-spacing: 1px;
+    text-shadow: 1px 1px 4px rgba(255,255,255,0.7);
   }
 
   button {
     padding: 22px 44px;
     font-size: 26px;
     margin: 14px;
-    border-radius: 18px;
+    border-radius: 20px;
     cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 2px solid rgba(0, 0, 0, 0.35);
     font-family: 'Dancing Script', cursive;
     font-weight: 600;
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.12); /* MOLTO trasparente */
-    backdrop-filter: blur(8px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    color: #000;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.25);
     transition: all 0.35s ease;
   }
 
-  /* Verde chiaro molto trasparente */
+  /* Velo verde chiaro */
   #upload {
-    background-color: rgba(144, 238, 144, 0.22);
+    box-shadow:
+      inset 0 0 0 200px rgba(144, 238, 144, 0.22),
+      0 8px 14px rgba(0, 0, 0, 0.25);
   }
 
-  /* Rosa antico molto trasparente */
+  /* Velo rosa antico */
   #view {
-    background-color: rgba(216, 167, 177, 0.22);
+    box-shadow:
+      inset 0 0 0 200px rgba(216, 167, 177, 0.22),
+      0 8px 14px rgba(0, 0, 0, 0.25);
   }
 
   button:hover {
     transform: scale(1.06);
-    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow:
+      inset 0 0 0 200px rgba(255, 255, 255, 0.25),
+      0 10px 18px rgba(0, 0, 0, 0.35);
   }
 
   /* Mobile */
   @media (max-width: 600px) {
+    body {
+      padding-top: 80px;
+    }
+
     h1 {
       font-size: 42px;
     }
@@ -82,12 +93,12 @@
   <h1>Benvenuti al nostro giorno speciale 💍</h1>
 
   <button id="upload"
-    onclick="window.open('https://gio.it.tab.digital/s/3WykCbnnp2LC8zr', '_blank')">
+    onclick="window.open('https://drive.google.com/drive/folders/1aJiaPNRcVIupDNEmrIC3UgvMVLpYizJ7?usp=sharing', '_blank')">
     Carica foto e video
   </button>
 
   <button id="view"
-    onclick="window.open('https://mega.nz/folder/0PJ0BKhJ#PNI864eLx0MNaH-uw2GqNw', '_blank')">
+    onclick="window.open('https://photos.app.goo.gl/tem19AT2r6UuSMy29', '_blank')">
     Vedi i ricordi condivisi
   </button>
 
