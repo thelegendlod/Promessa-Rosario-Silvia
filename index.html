@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Condividi i tuoi ricordi - Matrimonio</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Sfondo locale dalla stessa cartella */
+    background: url('mat.jpeg') no-repeat center center;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+  }
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  button {
+    padding: 20px 40px;
+    font-size: 22px;
+    margin: 10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  }
+  #upload {
+    background-color: #e91e63;
+    color: #fff;
+  }
+  #upload:hover {
+    background-color: #c2185b;
+  }
+  #view {
+    background-color: #3f51b5;
+    color: #fff;
+  }
+  #view:hover {
+    background-color: #303f9f;
+  }
+</style>
+</head>
+<body>
+  <h1>Benvenuti al nostro giorno speciale 💍</h1>
+  <button id="upload" onclick="window.open('https://gio.it.tab.digital/s/3WykCbnnp2LC8zr', '_blank')">
+    Clicca qui per caricare le tue foto e video
+  </button>
+  <button id="view" onclick="window.open('https://mega.nz/folder/0PJ0BKhJ#PNI864eLx0MNaH-uw2GqNw', '_blank')">
+    Vedi i ricordi condivisi dagli altri
+  </button>
+</body>
+</html>
